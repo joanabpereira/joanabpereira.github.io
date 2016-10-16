@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>joana's portfolio</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:200|Pacifico' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/milligram.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="leftPanel">
+            <div id="introduction">
+                <h1>hi, i'm joana</h1>
+                <p>Currently working as an OutSystems developer, I'm passionate about Front-end development and User Experience.</p>
+                <p>I like building things, I like tinkering, I like solving problems.</p>
+                <ul>
+                    <li>Find me at: </li>
+                    <li><a href="https://www.instagram.com/joanabpereira/">Instagram</a></li>
+                    <li><a href="https://twitter.com/joanabpereira">Twitter</a></li>
+                    <li><a href="https://pt.linkedin.com/in/joanabpereira">LinkedIn</a></li>
+                    <li><a href="https://medium.com/@pereira.b.joana">Medium</a></li>
+                </ul>
+                <div id="footer" class="clearfix">
+                    <p>Designed and coded with <i id="heart">♥</i> by Joana Pereira </p>
+                </div>
+                
+            </div>
+        </section>
+        <section id="rightPanel">
+            <div id="experiment">            
+                <div id="scrollIndicator"><i></i></div>
+            </div>
+            <div id="words">
+                <h3>Education</h3>
+                <p><strong>2007 - 2014 </strong> - M.Sc. Information Systems and Computer Engineering, <em>Instituto Superior Técnico</em></p>
+                <p>Specialization in Software Engineering and Multimedia Systems</p>
+                <p>Master's thesis: <a id="ls" href="http://web.ist.utl.pt/ist162550/livingslides/livingslides.html">LivingSlides</a> - an interactive presentation tool</p>
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>OutSystems</li>
+                    <li>Java</li>
+                    <li>Wordpress</li>
+                    <li>SQL</li>
+                </ul>
+                <h3>Interests</h3>
+                <ul>
+                    <li>Front-End Development</li>
+                    <li>Usability</li>
+                    <li>User Experience</li>
+                    <li>User Interfaces</li>
+                    <li>Content Management Systems</li>
+                    <li>Infographics</li>
+                </ul>
+                <h3 class="clearfix">Projects</h3>
+                <div class="project">
+                    <p><strong>April 2016 </strong> - <a href="http://www.outfit.pt/OutBooster/">Campaign landing page</a>, <em>Outfit - Tailored Agile Solutions</em></p>
+                    <p>Landing page to promote the solutions available at Outfit for future clients. This campaign was used to gather new clients by sending them a jar of sweets with a label directing them to the campaign page.</p>
+                </div>
+                <div class="project">
+                    <p><strong>March - April 2016 </strong> - <a href="http://www.encontroterapeutico.com.pt">Website</a>, <em>Encontro Terapêutico - Consultório de Psicologia</em></p>
+                    <p>Website and blog, developed using Wordpress and the Bootstrap framework. The client needed a new website that could give her the possibility to edit the pages about the practice and also add blog posts. The client wanted a clean and simple website, cheerful but sober.</p>
+                </div>
+                <div class="project">
+                    <p><strong>December 2015 </strong> - <a href="http://outfit.pt/OutfitXmas/xmas.html">Xmas Postcards</a>, <em>Outfit - Tailored Agile Solutions</em></p>
+                    <p>Working with the Marketing department, I developed interactive postcards for Outfit's clients, workers and friends. The postcard was initially empty then allowing the user to tailor the postcard to her taste by choosing one of the five available characters.</p>
+                </div>
+                <div class="project">
+                    <p><strong>October 2015 </strong> - <a href="http://outfit.pt/">Landing Page</a>, <em>Outfit - Tailored Agile Solutions</em></p>
+                    <p>Landing page for Outfit - Tailored Agile Solutions. The website was developed with the help of the Bootstrap framework. Worked closely with the Marketing department.</p>
+                </div>
+                <div class="project">
+                    <p><strong>February 2015 - April 2015 </strong> - Content Management System, <em>Associação Portuguesa de Seguradores</em></p>
+                    <p>Content Managment System developed in OutSystems.</p>
+                </div>
+                <div class="project">
+                    <p><strong>October 2014 </strong> - Content Management System, <em>Bacardi Martini Portugal</em></p>
+                    <p>Content Managment System developed in OutSystems.</p>
+                </div>                
+            </div>
+        </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $("#experiment").css("opacity", 1 - $(window).scrollTop() / 90);
+            });
+        });
+    </script>
+</html>
