@@ -1,6 +1,7 @@
 /***************************************
 * Joana Pereira's Portfolio
 * Version 1.0 - February 2016
+* Version 2.0 - August 2017
 ***************************************/
 
 /****** Resets *****/
@@ -14,11 +15,12 @@ body{
     padding:0px;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Montserrat', Helveica, Arial, sans-serif;
     color: #5DB7DE;
+    font-family: 'Montserrat', Helveica, Arial, sans-serif;
 }
 a{
     color: #1D84B5;
+    text-decoration: underline;
 }
 ul{
     list-style: none;
@@ -40,38 +42,46 @@ li:first-child{
     clear: both;
 }
 
-/*** Left Panel  ***/
-#LeftPanel{
-    width: 45vw;
-    width: 45% ;
-    height: 100vh;
-    padding: 30px;
-    float:left;
-    position: fixed;
+/* Elements */
+#introduction,
+#skills,
+#project{
+    min-height: 100vh;
 }
 
+/*** Introduction  ***/
 #introduction{
-    position: relative;
-    top:20%
+    background-color: #5DB7DE;
+    color: #fff;
+    font-size: 1.2em;
+    padding-top: 150px;
 }
 
 #introduction h1{
+    color: #fff;
     font-size: 9rem;
+    margin-bottom: 50px;
+}
+
+#introduction p{
+    margin-bottom: 0px;
+}
+#introduction p:nth-child(2){
+    margin-top: 10px;
+}
+
+#introduction ul{
+    margin-top: 45px;
 }
 
 #heart{
     color:#B3679B;
 }
 
-/*** Right Panel ***/
-#RightPanel{
-    width: 55vw;
-    width: 55%;
-    min-height: 100vh;
-    float: right;
-    padding:30px;
-    position: relative;
-    overflow: hidden;
+/* Skills */
+
+#skills{
+    padding-top:150px;
 }
 #experiment{
     height: 150px;
