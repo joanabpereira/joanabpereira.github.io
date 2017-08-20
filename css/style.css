@@ -12,14 +12,16 @@ body{
     letter-spacing: 0.01em;
     line-height: 1.6;
     margin:0px;
+    overflow-x: hidden;
     padding:0px;
+    width: 100vw;
 }
 h1, h2, h3, h4, h5, h6{
     color: #5DB7DE;
     font-family: 'Montserrat', Helveica, Arial, sans-serif;
 }
 a{
-    color: #1D84B5;
+    color: #fff;
     text-decoration: underline;
 }
 ul{
@@ -42,24 +44,31 @@ li:first-child{
     clear: both;
 }
 
-/* Elements */
+/* Elements - DRY */
+
 #introduction,
 #skills,
 #project{
     min-height: 100vh;
 }
 
-/*** Introduction  ***/
-#introduction{
+#introduction,
+#quote,
+#footer{
     background-color: #5DB7DE;
     color: #fff;
+}
+
+
+/*** Introduction  ***/
+#introduction{
     font-size: 1.2em;
-    padding-top: 150px;
+    padding-top: 12vw;
 }
 
 #introduction h1{
     color: #fff;
-    font-size: 9rem;
+    font-size: 10rem;
     margin-bottom: 50px;
 }
 
@@ -81,17 +90,41 @@ li:first-child{
 /* Skills */
 
 #skills{
-    padding-top:150px;
-}
-#experiment{
-    height: 150px;
-    width: 50%;
-    background: -webkit-linear-gradient(transparent, #FFF);
-    background: linear-gradient(transparent, #FFF);
-    position: fixed;
-    bottom: 0;
+    padding-top:12vw;
+    margin-bottom: 50px;
 }
 
+/* Quote */
+#quotewrapper,
+#quotewrapper svg{
+    width: 100%;
+}
+#quote{
+    height: 25rem;
+}
+
+#quote section{
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+#quote p:first-child{
+    font-family: Georgia, serif;
+    font-size:2.5em;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#quote p:nth-of-type(2){
+    text-align: right;
+}
+
+/* Projects */
+
+#projects{
+    padding-top: 10vw;
+}
 .project{
     margin-bottom: 2.5rem;
     border-bottom: 1px dotted #F5F5F5;
@@ -103,85 +136,13 @@ li:first-child{
 
 /* Footer */
 #footer{
-    position: fixed;
-    bottom: 0;
+    font-family: 'Montserrat', Helveica, Arial, sans-serif;
+    height: 10vh;
+    padding-top:3vh;
+    text-transform: uppercase;
 }
 
-/** Nice To Have ***/
-/* Pulsating circle */
-#scrollIndicator {
-    border-radius: 100%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    opacity: 1;
-    left: calc(50% - 25px);
-    bottom: 10px;
-    -webkit-transition: opacity 1.3s .5s;
-}
-#scrollIndicator i {
-    width:30px;
-    height: 30px;
-    display: block;
-    background: url(../img/icon_arrow_light.svg) no-repeat center center #1D84B5;
-    background-size: 12px;
-    border-radius: 100%;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: 100
-}
-#scrollIndicator:before {
-    content: "";
-    top: 0;
-    left: 0;
-    background-color: #1D84B5;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position: absolute;
-    opacity: 0;
-    -webkit-animation: jumper 1.8s 0.33333s ease-out infinite;
-}
-#scrollIndicator:after {
-    content: "";
-    background-color: #1D84B5;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position: absolute;
-    opacity: 0;
-    -webkit-animation: jumper 1.8s 0.66666s ease-out infinite;
-}
-@-webkit-keyframes jumper {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
-    5% {
-        opacity: 1
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0
-    }
-}
-@keyframes jumper {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
-    5% {
-        opacity: 1
-    }
-    100% {
-        opacity: 0
-    }
+#footer footer{
+    align-items: center;
+    justify-content: center;
 }

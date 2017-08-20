@@ -18,12 +18,10 @@
                         <p>Living in sunny Lisboa, I am currently working as a <em>front-end developer</em>. I'm passionate about CSS and UX Design.</p>
                         <p>I like building things, I like tinkering, I like solving problems.</p>
                         <ul>
-                            <li>Find me on: </li>
-                            <li><a href="https://www.instagram.com/joanabpereira/">Instagram</a></li>
-                            <li><a href="https://twitter.com/joanabpereira">Twitter</a></li>
-                            <li><a href="https://pt.linkedin.com/in/joanabpereira">LinkedIn</a></li>
-                            <li><a href="https://medium.com/@pereira.b.joana">Medium</a></li>
-                            <li><a href="https://github.com/joanabpereira">github</a></li>
+                            <li><a href="https://www.instagram.com/joanabpereira/"><img src="img/instagram-logo.svg"></a></li>
+                            <li><a href="https://twitter.com/joanabpereira"><img src="img/twitter-logo-silhouette.svg"></a></li>
+                            <li><a href="https://pt.linkedin.com/in/joanabpereira"><img src="img/linkedin-logo.svg"></a></li>
+                            <li><a href="https://github.com/joanabpereira"><img src="img/github-logo.svg"></a></li>
                         </ul>
                     </div>
                 </section>
@@ -37,7 +35,8 @@
                 <div  class="row">
                     <div id="words" class="column column-60">
                         <p>I began my career in Tech by studying <strong>Computer Science & Software Engineering</strong> at <em>Instituto Superior Técnico</em>. I graduated as a MSc in 2014. That same year, I began working as an <i>OutSystems developer</i> at Glintt. Always thirsty for knowledge, I took a 6-month course in <strong>UX/UI Design</strong> at <em>EDIT. - Digital Disruptive Education</em>. In 2017, I transitioned from full-stack development to front-end development.</p>
-                        <p><em>Where do I see myself in 3 years?</em> Ideally, I see myself being a <strong>unicorn</strong>: a front-end developer and a UX designer. </p>
+                        <h6><em>Where do I see myself in 3 years?</em></h6>
+                        <p> Ideally, I see myself being a <strong>unicorn</strong>: a front-end developer and a UX designer. </p>
                     </div>
                 </div>
                 <div class="row">
@@ -66,6 +65,26 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div id="quotewrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon x="0" y="0" points="0,100 100,0 100,100" style="fill:#5DB7DE" />
+            </svg>
+            <div id="quote">
+                <div class="container">
+                    <section class="row">
+                        <div class="column column-70">
+                            <p>"Once you stop learning you start dying"</p>
+                            <p>Albert Einstein</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon x="0" y="0" points="0,0 0,100 100,0" style="fill:#5DB7DE" />
+            </svg>
+        </div>
+        <div class="container">
             <section id="projects" class="row">
                 <div class="column column-80">
                     <h3 class="clearfix">Projects</h3>
@@ -108,13 +127,20 @@
                 </div>
             </section>
         </div>
+        <div id="footer">
+            <div class="container-fluid">
+                <footer class="row">
+                    <p>2017 Joana Pereira</p>
+                </footer>
+            </div>
+        </div>
+        <div id="instafeed"></div>
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/instafeed.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                $("#experiment").css("opacity", 1 - $(window).scrollTop() / 90);
-            });
+        const feed = new Instafeed({
+            clientId: '46fea468c9cd4dd1a165eec7e0dfdb8e'
         });
+        feed.run();
     </script>
 </html>
