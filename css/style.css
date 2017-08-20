@@ -125,6 +125,10 @@ li:first-child{
 #projects{
     padding-top: 10vw;
 }
+
+#projects a{
+    color: #5DB7DE;
+}
 .project{
     margin-bottom: 2.5rem;
     border-bottom: 1px dotted #F5F5F5;
