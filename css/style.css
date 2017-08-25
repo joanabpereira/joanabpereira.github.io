@@ -94,6 +94,13 @@ li:first-child{
     margin-bottom: 50px;
 }
 
+.skill{
+    border: 5px solid #5DB7DE;
+    padding: 2em;
+    margin: 2em;
+    text-align: center;
+}
+
 /* Quote */
 #quotewrapper,
 #quotewrapper svg{
