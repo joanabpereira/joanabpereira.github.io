@@ -6,7 +6,7 @@
 
 /****** Resets *****/
 body{
-    color: #222725;
+    color: #444;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 1.6em;
     font-weight: 300;
@@ -48,14 +48,19 @@ li:first-child{
 /* Elements - DRY */
 
 #introduction,
-#skills,
 #project{
     min-height: 100vh;
 }
 
+#about,
+#skills{
+    min-height: 50vh;
+}
+
 #introduction,
 #quote,
-#footer{
+#footer,
+.skill{
     background-color: #5DB7DE;
     color: #fff;
 }
@@ -89,11 +94,39 @@ li:first-child{
     color:#B3679B;
 }
 
-/* Skills */
+/* About */
 
-#skills{
+#about{
     padding-top:12vw;
     margin-bottom: 50px;
+}
+
+/* Skills */
+#skills{
+
+}
+
+.skill{
+    border: 5px solid #5db7de;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 10px;
+}
+
+.skill-90{
+    width: 90%;
+}
+.skill-80{
+    width: 80%;
+}
+.skill-70{
+    width: 70%;
+}
+.skill-60{
+    width: 60%;
+}
+.skill-50{
+    width: 50%;
 }
 
 /* Quote */
